@@ -13,12 +13,13 @@ h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -29,14 +30,18 @@ main{
     max-width: 840px;
 }
 
-aside{
+aside {
     width: 20rem;
     margin: 10rem;
     border: 1px solid rgb(0, 0, 0);
-    padding: 1rem;
     background-color: white;
     color: #333;
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+  left: 150px;
 }
 
 aside img{
@@ -48,4 +53,19 @@ footer{
     margin-top: 10px;
     border-top: 1px #000;
     text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #fc0000;
+  color: #ffffff;
 }
