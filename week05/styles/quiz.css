@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header, footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  margin: 0 auto;
+  flex: 1;
+}
+
+form {
+  max-width: 600px;
+  border: 2px solid #9494948f;
+  padding: 30px;
+  border-radius: 5px;
+  display: grid;
+  gap: 5px;
+}
+
+input, textarea, select {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
