@@ -89,30 +89,7 @@ footer {
     text-align: center;
 }
 
-.hero h1 {
-    position: absolute;
-    left: 0;
-    top: 15px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
-    font-size: 1.8rem;
-}
-
-h1 {
-    position: absolute;
-    left: 15px;   
-    top: 15px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.9;
-    background-color: var(--accent2-color);
-    color: #FFFFE8;
-}
-
-h2 {
+.hero h1, h2 {
     position: relative;
     top: 20px;
     width: 100%;
