@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us - Down the river </title>
+    <meta name="description" content="Contact page of a rafting company called Down The River">
+    <meta name="author" content="Liz Tundidor">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-downriver.png" alt="Down river rafting logo" width=128 height=128>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <section class="contact-info">
+                <h2>Down the river rafting</h2>
+                <div class="info-details">
+                    <p>123 Ocean Ave, Adventure City, Country</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: downtheriverliz@hotmail.com </p>
+                    <p>Business Hours: Mon-Fri 9am - 6pm, Sat-Sun 10am - 4pm</p>
+                </div>
+                <div class="contact-container">
+                    <div class="map">
+                        <img src="images/location.jpeg" alt="Map showing our location">
+                    </div>
+                    <form>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label for="fullname">Full name:</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Your Name">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email">
+
+                            <p>Message Purpose:</p>
+                            <label><input type="radio" name="purpose" value="general"> General Inquiry</label><br>
+                            <label><input type="radio" name="purpose" value="reservation"> Reservation
+                                Question</label><br>
+                            <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Type your message here"></textarea>
+
+                            <label>
+                                <input type="checkbox" name="subscribe" checked>
+                                Please subscribe me to the monthly newsletter
+                            </label>
+
+                            <button type="submit">Get in Touch!</button>
+                        </fieldset>
+                    </form>
+            </section>
+            <section class="employees">
+                <h2>We are here to serve You!</h2>
+                <div class="employees-gallery">
+                    <figure>
+                        <img src="images/employee-one.jpeg" alt="woman employee">
+                        <figcaption>Our CEO</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/employee-two.jpeg" alt="Our agricultures">
+                        <figcaption>Our agricultures</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/rafting-employee.jpg" alt="Our teachers">
+                        <figcaption>Our teachers</figcaption>
+                    </figure>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <p>© 2025 Down the river Liz Tundidor</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook-logo.png" alt="Facebook logo" width=100 height=100>
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo.png" alt="Instagram logo" width=100 height=100>
+            </a>
+            <a href="https://x.com">
+                <img src="images/twitter-logo.png" alt="Twitter logo" width=100 height=100>
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
