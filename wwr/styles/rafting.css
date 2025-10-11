@@ -145,6 +145,9 @@ footer {
 }
 
 h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin: 1rem 0;
     position: absolute;
     left: 15px;   
     top: 15px;
@@ -153,7 +156,6 @@ h1 {
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent2-color);
-    color: #FFFFE8;
 }
 
 h2 {
@@ -215,4 +217,86 @@ h2 {
 .history-content img {
     width: 100%;
     border-radius: 8px;
+}
+
+.employees-gallery {
+    padding: 2rem;
+     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.employees-gallery h2 {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.employees-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+}
+
+.map img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+.contact-header{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 1rem;
+}
+
+.contact-header .logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.contact-header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.contact-header nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
