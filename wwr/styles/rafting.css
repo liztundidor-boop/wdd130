@@ -1,5 +1,4 @@
 :root {
-
     --primary-color: #003707; /*dark green*/
     --secondary-color: #FFFFE8; /*paper white*/
     --accent1-color: #000000; /*black*/
@@ -104,9 +103,9 @@ footer {
 
 .hero h1 {
     position: absolute;
-    left: 0;
+    left: 65px;
     top: 15px;
-    width: 100%;
+    width: 90%;
     padding: 16px;
     text-align: center;
     background-color: var(--accent2-color);
@@ -275,15 +274,6 @@ label {
   margin-top: 0.5rem;
 }
 
-
-.contact-header{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--accent2-color);
-    padding: 1rem;
-}
-
 .contact-header .logo img {
   max-width: 100px;
   height: auto;
@@ -299,4 +289,238 @@ label {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+.intro-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+  background: none;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: left;
+}
+
+.newsletter-form {
+  background: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.newsletter-form label {
+  color: var(--accent1-color);
+  font-weight: bold;
+  display: block;
+  margin-top: 0.5rem;
+}
+.experience {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--accent2-color);
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.experience h2 {
+  background: var(--accent2-color);
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  padding: 0.75rem;
+}
+
+.highlights {
+  text-align: center;
+  padding: 2rem;
+}
+
+.highlight-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.highlight-gallery figure {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+  width: 250px; 
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-gallery figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.highlight-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.highlight-gallery h3 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-gallery figcaption {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+.call-to-action {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.call-to-action h2 {
+  background: none;
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.call-to-action p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #005a0e;
+  transform: translateY(-3px);
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trip-card {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trip-card h2 {
+  color: white;
+  margin-top: 1rem;
+}
+
+.trip-card p {
+  margin: 1rem 0;
+}
+
+.trip-card ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.trip-table-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.trips-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.trips-table th, .trips-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+}
+
+.trips-table th {
+  background-color: var(--accent2-color);
+  color: white;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.call-to-action {
+  background-color: var(--accent2-color);
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 3rem 1.5rem;
+  border-radius: 8px;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #005a0e;
+  transform: translateY(-3px);
 }
